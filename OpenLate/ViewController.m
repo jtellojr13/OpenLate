@@ -46,13 +46,13 @@
 -(void)viewDidAppear:(BOOL)animated
 {
     
-    [Foursquare2 authorizeWithCallback:^(BOOL success, id result) {
+   // [Foursquare2 authorizeWithCallback:^(BOOL success, id result) {
         
        
         [self findVenueInformation];
   
        
-        }];
+     //   }];
     
 
 
@@ -110,7 +110,7 @@
                                                  isOpenArray = [NSMutableArray array];
                                                  isOpenArray = [hoursDict objectForKey:@"isOpen"];
                                                 
-                                                 NSLog(@"%@",isOpenArray);
+                                                 NSLog(@"%@",venueDict);
                                                  
                                                  
                                                                                              
