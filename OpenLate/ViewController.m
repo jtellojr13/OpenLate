@@ -43,16 +43,17 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 -(void)viewDidAppear:(BOOL)animated
 {
     
-    [Foursquare2 authorizeWithCallback:^(BOOL success, id result) {
+ //   [Foursquare2 authorizeWithCallback:^(BOOL success, id result) {
         
        
         [self findVenueInformation];
   
        
-        }];
+      //  }];
     
 
 
@@ -82,12 +83,20 @@
                                          responseTwoDict = [[NSMutableDictionary alloc]init];
                                          venueDict = [[NSMutableDictionary alloc]init];
                                          hoursDict = [[NSMutableDictionary alloc]init];
+                                        
+                                         
+                                         
+                                                                                 
                                          
                                          venuesArray = [responseDictionary objectForKey:@"venues"];
                                          
                                          for (NSMutableDictionary* dict in venuesArray) {
                                              NSString* restID = [dict objectForKey:@"id"];
                                              [IDArray addObject:restID];
+                                             NSString*latitude = [dict valueForKeyPath:@"location.lat"];
+                                             NSString*longitude = [dict valueForKeyPath:@"location.lng"];
+                                             
+
                                              
                                          }
                                          
@@ -110,7 +119,8 @@
                                                  isOpenArray = [NSMutableArray array];
                                                  isOpenArray = [hoursDict objectForKey:@"isOpen"];
                                                 
-                                                 NSLog(@"%@",isOpenArray);
+                                                // NSLog(@"%@",isOpenArray);
+                                                // NSLog(@"venue dict: %@", venueDict);
                                                  
                                                  
                                                                                              
