@@ -84,8 +84,6 @@
 		3DDF3FBE174D62B1006186BF = {
 			isa = PBXGroup;
 			children = (
-				3D0CFA4B174DAF8000078CBA /* CoreLocation.framework */,
-				3D0CFA49174DAF7800078CBA /* MapKit.framework */,
 				3DDF3FED174D62D2006186BF /* Foursquare2 */,
 				3DDF3FD0174D62B1006186BF /* OpenLate */,
 				3DDF3FC9174D62B1006186BF /* Frameworks */,
@@ -104,6 +102,8 @@
 		3DDF3FC9174D62B1006186BF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D0CFA49174DAF7800078CBA /* MapKit.framework */,
+				3D0CFA4B174DAF8000078CBA /* CoreLocation.framework */,
 				3DDF3FCA174D62B1006186BF /* UIKit.framework */,
 				3DDF3FCC174D62B1006186BF /* Foundation.framework */,
 				3DDF3FCE174D62B1006186BF /* CoreGraphics.framework */,
