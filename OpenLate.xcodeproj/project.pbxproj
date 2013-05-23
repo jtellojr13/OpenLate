@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D0CFA4A174DAF7800078CBA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0CFA49174DAF7800078CBA /* MapKit.framework */; };
 		3D0CFA4C174DAF8000078CBA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D0CFA4B174DAF8000078CBA /* CoreLocation.framework */; };
+		3D5ECCDD174EB75000D0A951 /* Venue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5ECCDC174EB75000D0A951 /* Venue.m */; };
 		3DDF3FCB174D62B1006186BF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDF3FCA174D62B1006186BF /* UIKit.framework */; };
 		3DDF3FCD174D62B1006186BF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDF3FCC174D62B1006186BF /* Foundation.framework */; };
 		3DDF3FCF174D62B1006186BF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DDF3FCE174D62B1006186BF /* CoreGraphics.framework */; };
@@ -34,6 +35,8 @@
 /* Begin PBXFileReference section */
 		3D0CFA49174DAF7800078CBA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3D0CFA4B174DAF8000078CBA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3D5ECCDB174EB75000D0A951 /* Venue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Venue.h; sourceTree = "<group>"; };
+		3D5ECCDC174EB75000D0A951 /* Venue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Venue.m; sourceTree = "<group>"; };
 		3DDF3FC7174D62B1006186BF /* OpenLate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenLate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DDF3FCA174D62B1006186BF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3DDF3FCC174D62B1006186BF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 				3DDF3FE2174D62B2006186BF /* MainStoryboard.storyboard */,
 				3DDF3FE5174D62B2006186BF /* ViewController.h */,
 				3DDF3FE6174D62B2006186BF /* ViewController.m */,
+				3D5ECCDB174EB75000D0A951 /* Venue.h */,
+				3D5ECCDC174EB75000D0A951 /* Venue.m */,
 				3DDF3FD1174D62B1006186BF /* Supporting Files */,
 			);
 			path = OpenLate;
@@ -236,6 +241,7 @@
 				3DDF3FFC174D62D2006186BF /* FSRequester.m in Sources */,
 				3DDF3FFD174D62D2006186BF /* FSTargetCallback.m in Sources */,
 				3DDF3FFE174D62D2006186BF /* FSWebLogin.m in Sources */,
+				3D5ECCDD174EB75000D0A951 /* Venue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
