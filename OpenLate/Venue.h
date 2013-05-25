@@ -12,8 +12,11 @@
 @interface Venue : NSObject <MKAnnotation>
 
 @property (nonatomic, assign) CLLocationCoordinate2D coordinate;
-@property (nonatomic, copy) NSString *title; //Restaurant Name
-@property (nonatomic, copy) NSString *subtitle; //Address
-@property (nonatomic) BOOL isOpen;
+@property (nonatomic, copy) NSString* title; //Restaurant Name
+@property (nonatomic, copy) NSString* subtitle; //Address
+@property (nonatomic,strong) NSString* restID;
+@property (nonatomic) int isOpen;
+
+
 
 @end
